@@ -31,3 +31,17 @@
 
 @media(max-width:900px){.contact-inner{display:block}.contact-cards{gap:18px}.contact-card{padding:28px 24px}}
 @media(max-width:650px){.contact-inner{padding:72px 20px}.contact-heading{margin-bottom:34px}.contact-heading h2{font-size:42px}.contact-heading>p:last-child{font-size:14px}.contact-cards{grid-template-columns:1fr}.contact-card{padding:26px 20px}.detail-row{grid-template-columns:44px 1fr;gap:13px}.detail-icon{width:44px;height:44px}.collaborate-card{padding:26px 22px 34px}.collaborate-card:after{left:22px;right:22px}.hero{background:radial-gradient(circle at 75% 28%,#f2d5e0 0,transparent 24%),linear-gradient(135deg,#fffaf7,#f8e9ef)}}
+
+/* Keep project actions reachable while long project details scroll independently. */
+.project-modal{max-height:calc(100dvh - 40px);display:flex;flex-direction:column;overflow:hidden}
+.project-modal>p:first-of-type,.project-modal h2{flex:0 0 auto}
+.modal-scroll-content{min-height:0;overflow-y:auto;overscroll-behavior:contain;padding-right:10px;scrollbar-gutter:stable}
+.modal-scroll-content h3{font-size:16px;margin:12px 0 4px}
+.modal-scroll-content ul{padding-left:18px;margin:8px 0 12px}
+.modal-scroll-content .project-tags{margin:10px 0 2px}
+.modal-actions{flex:0 0 auto;padding-top:16px;border-top:1px solid var(--line);background:white}
+.highlight-education{background-image:linear-gradient(0deg,#260b18c7,#260b1840),url('/education-card.svg')!important;background-size:cover!important;background-position:center!important}
+.highlight-projects{background-image:linear-gradient(0deg,#260b18dc,#260b1840),url('https://images.unsplash.com/photo-1519389950473-47ba0277781c?w=900&q=80')!important;background-size:cover!important;background-position:center!important}
+.highlights article b,.highlights article span{position:relative;z-index:1;color:#fff}
+.highlights article b{font-size:38px}
+@media(max-width:650px){.project-modal{max-height:calc(100dvh - 24px);padding:28px 22px}.modal-actions{flex-direction:row;flex-wrap:wrap}.modal-actions .button{flex:1;text-align:center;justify-content:center}.highlights article{min-height:125px;padding:20px}}
